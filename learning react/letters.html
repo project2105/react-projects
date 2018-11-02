@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>React Letters</title>
-    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
-    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://fb.me/react-15.0.0-rc.2.js"></script>
+    <script src="https://fb.me/react-dom-15.0.0-rc.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://npmcdn.com/react-router@3.0.2/umd/ReactRouter.min.js"></script>
     <style>
         #container {
             padding: 50px;
@@ -21,7 +21,7 @@
 <body>
     <div id="container"></div>
 
-    <script type="test/babel">
+    <script type="text/babel">
         var Letter = React.createClass({
             render: function() {
                 var letterStyle = {
@@ -45,14 +45,14 @@
 
         var destination = document.querySelector("#container");
 
-        ReactDom.Render (
+        ReactDOM.render (
             <div>
                 <Letter bgcolor="#58B3FF">A</Letter>
                 <Letter bgcolor="#FF605F">E</Letter>
                 <Letter bgcolor="#FFD52E">I</Letter>
                 <Letter bgcolor="#49DD8E">O</Letter>
                 <Letter bgcolor="#AE99FF">U</Letter>
-            </div>
+            </div>,
             destination
         );
     </script>
